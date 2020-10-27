@@ -20,6 +20,7 @@ public class Tester{
     trial[2][3]=14;
     trial[2][4]=15;
     System.out.println(arrToString(ArrayOps.sumRows(trial)));
+    System.out.println(arrToString(ArrayOps.largestInRows(trial)));
   }
 
   public static String arrToString(int[] arr){
