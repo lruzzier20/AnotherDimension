@@ -75,4 +75,10 @@ public class ArrayOps{
     return allEqual;
   }
 
+  public static boolean isLocationMagic(int[][] matrix, int row, int col){
+    int[] array1 = sumRows(matrix);
+    int[] array2 = sumCols(matrix);
+    if(array1[row]==array2[col]){return true;}else{return false;}
+  }
+
 }

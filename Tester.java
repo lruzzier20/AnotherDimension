@@ -13,12 +13,16 @@ public class Tester{
     trial[2][0]=3;
     trial[2][1]=1;
     trial[2][2]=2;
+    int[][] otherTrial = new int[][]{ {1,2,3,4},
+                                      {2,3,4,1},
+                                      {3,4,1,2} };
     System.out.println(arrToString(ArrayOps.sumRows(trial)));
     System.out.println(arrToString(ArrayOps.largestInRows(trial)));
     System.out.println(ArrayOps.sum(trial));
     System.out.println(arrToString(ArrayOps.sumCols(trial)));
     System.out.println(ArrayOps.isRowMagic(trial));
     System.out.println(ArrayOps.isColMagic(trial));
+    System.out.println(ArrayOps.isLocationMagic(otherTrial, 1, 2));
   }
 
   public static String arrToString(int[] arr){
