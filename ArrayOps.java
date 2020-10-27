@@ -43,4 +43,17 @@ public class ArrayOps{
     }
     return sum;
   }
+
+  public static int[] sumCols(int[][] matrix){
+    int[] array = new int[matrix[0].length];
+    int tempSum = 0;
+    for(int i=0;i<matrix[0].length;i++){
+      for(int j=0;j<matrix.length;j++){
+        tempSum+=matrix[j][i];
+      }
+      array[i] = tempSum;
+      tempSum=0;
+    }
+    return array;
+  }
 }
