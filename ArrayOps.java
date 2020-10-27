@@ -59,7 +59,15 @@ public class ArrayOps{
 
   public static boolean isRowMagic(int[][] matrix){
     int[] array = sumRows(matrix);
-    int ans = array[0];
+    boolean allEqual = true;
+    for(int i=0;i+1<array.length;i++){
+      if(!(array[i]==array[i+1])){allEqual=false;}
+    }
+    return allEqual;
+  }
+
+  public static boolean isColMagic(int[][] matrix){
+    int[] array = sumCols(matrix);
     boolean allEqual = true;
     for(int i=0;i+1<array.length;i++){
       if(!(array[i]==array[i+1])){allEqual=false;}
