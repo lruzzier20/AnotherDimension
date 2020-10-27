@@ -7,16 +7,17 @@ public class Tester{
     trial[0][0]=1;
     trial[0][1]=2;
     trial[0][2]=3;
-    trial[1][0]=6;
-    trial[1][1]=7;
-    trial[1][2]=8;
-    trial[2][0]=11;
-    trial[2][1]=12;
-    trial[2][2]=13;
+    trial[1][0]=1;
+    trial[1][1]=2;
+    trial[1][2]=3;
+    trial[2][0]=1;
+    trial[2][1]=2;
+    trial[2][2]=3;
     System.out.println(arrToString(ArrayOps.sumRows(trial)));
     System.out.println(arrToString(ArrayOps.largestInRows(trial)));
     System.out.println(ArrayOps.sum(trial));
     System.out.println(arrToString(ArrayOps.sumCols(trial)));
+    System.out.println(ArrayOps.isRowMagic(trial));
   }
 
   public static String arrToString(int[] arr){
